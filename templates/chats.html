@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Pamēģini čatot</title>
+        <link href="{{url_for('static', filename='favicon.ico')}}" rel="icon" type="image/x-icon"/>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <script src="static/darbs.js"></script>
+       
     </head>
     <body onload="lasiChatu()"; class="body">
         Šeit varēs čatot
@@ -13,7 +15,8 @@
         </div>
         <div>
             <input type="text" id="zinja" type="text" required   size="100">
-            <button type="button" onclik="sutiZinju()">Sūti</button>
+            <button type="button" onclick="sutiZinju()">Sūti</button>
         </div>
+        <script src="static/darbs.js"></script>
     </body>
 </html>
