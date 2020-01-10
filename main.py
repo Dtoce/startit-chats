@@ -9,6 +9,13 @@ app = Flask('app')
 def index_page():
   return render_template("index.html")
 
+@app.route('/chats')
+def chats_page():
+  return render_template("chats.html")
+#chata lapa 
+
+
+
 @app.route('/healt')
 def healt_check():
   return "ok"
